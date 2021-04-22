@@ -5,11 +5,14 @@ import router from "./router";
   const client_id = window.env.CLIENT_ID;
   const redirect_uri = window.env.APP_URL;
 
-  window.auth0Client = await createAuth0Client({
-   domain,
-   client_id,
-   redirect_uri,
-  });
+    window.auth0Client = await createAuth0Client({
+        domain,
+        client_id,
+        redirect_uri,
+        cacheLocation: "localstorage",
+        audience: "https://expenses-api", // 👈 Added
+        scope: "read:reports", // 👈 Added
+    });
 
   // handle user navigation
   window.addEventListener("hashchange", router);
