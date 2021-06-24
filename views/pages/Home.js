@@ -5,7 +5,7 @@ const Home = {
   render: async () => {
     const summary = await expensesApi.getTotals();
     const view = /*html*/ `
-    <h1>Home Page</h1>
+    <h1>Auto Enrollment</h1>
     <p id="user-greet">Hello, ${window.user.name}</p>
     <p>So far, this app has been used to manage:</p>
     <div id="summary">
