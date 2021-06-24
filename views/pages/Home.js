@@ -5,16 +5,12 @@ const Home = {
   render: async () => {
     const summary = await expensesApi.getTotals();
     const view = /*html*/ `
-    <h1>Auto Enrollment</h1>
-    <p id="user-greet">Hello, ${window.user.name}</p>
-    <p>So far, this app has been used to manage:</p>
+    <h3>Security Check Setup</h3>
+    <p>Using the TradeStation Mobile app</p>
     <div id="summary">
-    <ul>
-      <li><strong id="expenses-count">${summary.count}</strong> expenses</li>
-      <li>$<strong id="expenses-total">
-      ${summary.total.toFixed(2)}
-      </strong> dollars</li>
-    </ul>
+    <p>When you login from an untrusted device instead of being asked to enter a 6-digit passcode you will simply need to approve the login request with a tap of your finger.</p>
+    <p>Even better, when you log in to the mobile app on this device we will very the login request for you, which gives you the same extra security without the extra step.</p>
+    <button type="button">Click Me!</button>
     </div>    
     `;
     return view;
