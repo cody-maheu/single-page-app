@@ -2,7 +2,7 @@ let params = (new URL(document.location)).searchParams;
 let state = params.get("state");
 console.log(state)
 
-let url = `https://cmaheu-enterprise.us.auth0.com/continue?${state}`
+let url = `https://cmaheu-enterprise.us.auth0.com/continue?state=${state}&test=yes`
 console.log(url)
 
 const Home = {
