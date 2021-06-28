@@ -1,4 +1,6 @@
-
+let params = (new URL(document.location)).searchParams;
+let name = params.get("state");
+console.log(name)
 
 const Home = {
   allowAccess: async () => true,
@@ -9,11 +11,12 @@ const Home = {
     <div id="summary">
     <p>When you login from an untrusted device instead of being asked to enter a 6-digit passcode you will simply need to approve the login request with a tap of your finger.</p>
     <p>Even better, when you log in to the mobile app on this device we will very the login request for you, which gives you the same extra security without the extra step.</p>
-    <button type="button">Continue</button>
-    <button type="button">Try another method</button>
     <form action="https://google.com">
-    <input type="submit" value="Go to Google" />
-</form>
+    <input type="submit" value="Continue" />
+    </form>
+    <form action="https://google.com">
+    <input type="submit" value="Try another method" />
+    </form>
     </div>    
     `;
     return view;
