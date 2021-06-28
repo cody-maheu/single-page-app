@@ -1,9 +1,8 @@
 let params = (new URL(document.location)).searchParams;
 let state = params.get("state");
-console.log(state)
-
 let url = `https://cmaheu-enterprise.us.auth0.com/continue?state=${state}&test=yes`
 let url2 = `https://cmaheu-enterprise.us.auth0.com/continue?state=${state}&test=no`
+let url3 = `https://cmaheu-enterprise.us.auth0.com/continue?state`
 console.log(url)
 
 const Home = {
@@ -18,7 +17,7 @@ const Home = {
     <form action=${url} >
     <input type="submit" value="Continue" />
     </form>
-    <form action=${url2}>
+    <form action=${url3}>
     <input type="submit" value="Try another method" />
     </form>
     </div>    
