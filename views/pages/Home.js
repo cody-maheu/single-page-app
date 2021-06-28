@@ -3,6 +3,7 @@ let state = params.get("state");
 console.log(state)
 
 let url = `https://cmaheu-enterprise.us.auth0.com/continue?state=${state}&test=yes`
+let url2 = `https://cmaheu-enterprise.us.auth0.com/continue?state=${state}&test=no`
 console.log(url)
 
 const Home = {
@@ -17,7 +18,7 @@ const Home = {
     <form action=${url} >
     <input type="submit" value="Continue" />
     </form>
-    <form action="https://google.com">
+    <form action=${url2}>
     <input type="submit" value="Try another method" />
     </form>
     </div>    
