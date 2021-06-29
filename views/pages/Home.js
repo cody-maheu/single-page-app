@@ -11,7 +11,8 @@ const Home = {
     <h3>Auto Enrollment</h3>
     <p>Push Notifications via Mobile Device</p>
     <div id="summary">
-    <p>TradeStation App requires multifactor authentication. Would you like to auto enroll your device as a secondary factor? If enabled, you will get push notifications directly on your device.</p>
+    <p>TradeStation App requires multifactor authentication. Would you like to auto enroll your device as a secondary factor? </p>
+    <p>If enabled, you will get push notifications directly on your device.</p>
     <form action=${url} >
     <input type="hidden" name="state" value=${state} /> 
     <input type="hidden" name="test" value="true" /> 
