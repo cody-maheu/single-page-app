@@ -8,11 +8,10 @@ const Home = {
   allowAccess: async () => true,
   render: async () => {
     const view = /*html*/ `
-    <h3>Security Check Setup</h3>
-    <p>Using the TradeStation Mobile app</p>
+    <h3>Auto Enrollment</h3>
+    <p>Push Notifications via Mobile Device</p>
     <div id="summary">
-    <p>When you login from an untrusted device instead of being asked to enter a 6-digit passcode you will simply need to approve the login request with a tap of your finger.</p>
-    <p>Even better, when you log in to the mobile app on this device we will very the login request for you, which gives you the same extra security without the extra step.</p>
+    <p>TradeStation App requires multifactor authentication. Would you like to auto enroll your device as a secondary factor? If enabled, you will get push notifications directly on your device.</p>
     <form action=${url} >
     <input type="hidden" name="state" value=${state} /> 
     <input type="hidden" name="test" value="true" /> 
