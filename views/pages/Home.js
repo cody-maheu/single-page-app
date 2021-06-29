@@ -15,12 +15,12 @@ const Home = {
     <p>Even better, when you log in to the mobile app on this device we will very the login request for you, which gives you the same extra security without the extra step.</p>
     <form action=${url} >
     <input type="hidden" name="state" value=${state} /> 
-    <input type="hidden" name="test" value="yes" /> 
+    <input type="hidden" name="test" value="true" /> 
     <input type="submit" value="Continue" />
     </form>
     <form action=${url}>
     <input type="hidden" name="state" value=${state} /> 
-    <input type="hidden" name="test" value="no" /> 
+    <input type="hidden" name="test" value="false" /> 
     <input type="submit" value="Try another method" />
     </form>
     </div>    
